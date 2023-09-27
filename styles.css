@@ -46,8 +46,34 @@ p {
   /* outline: 1px solid orange; */
 }
 
-a {
-  color: #000000; /* find a better blue color */
+a:link {
+  --link-color: #004fe9;  /* blue;  #00ace9; */
+  color: var(--link-color); /* find a better blue color */
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--link-color);
+}
+
+a:visited {
+  --link-visited-color: #003294; /* #00678c; */
+  color: var(--link-visited-color);
+  /* border-bottom: 1px solid var(--link-visited-color); */
+  border-bottom-color: var(--link-visited-color);
+  /* background: coral; */
+}
+a:hover {
+  --link-hover-color: #004fe9;  /* blue;  #00ace9; */
+  color: var(--link-hover-color);
+  border-bottom-color: var(--link-hover-color);
+  background: #00ace9;
+  background: #cceefb;
+}
+a:active {
+  --link-active-color: #004fe9;  /* blue;  #00ace9; */
+  color: var(--link-active-color);
+  border-bottom-color: var(--link-active-color);
+  background: #e6f7fd;
 }
 
 img {
