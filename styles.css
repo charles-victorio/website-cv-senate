@@ -1,0 +1,132 @@
+/*@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --grey-dark: #333333;
+  --white: #ffffff;
+  --padding-s: 10px;
+  --padding-m: 16px;
+}
+body {
+  font-family: SecondaryVariableFont, serif;
+}
+
+/* VOTE */
+h1 {
+  font-family: PrimaryVariableFont, sans-serif;
+  font-size: 6em;
+}
+
+/* for C V */
+h2 {
+  font-family: PrimaryVariableFont, sans-serif;
+  font-size: 4em;
+}
+
+/* Section labels */
+h3 {
+  font-family: PrimaryVariableFont, sans-serif;
+}
+
+h5 {
+}
+
+@media (min-width: 1024px) {
+  /* changes for desktop sizes */
+  /* VOTE */
+  h1 {
+    font-size: 8em;
+  }
+
+  /* for C V */
+  h2 {
+    font-size: 6em;
+  }
+
+  h5 {
+  }
+}
+
+.screen {
+  align-items: center;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  /* When not enough space vertically,
+     pack the flex items at the start. */
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 var(--padding-m);
+  /* outline: 1px solid green; */
+}
+
+.two-box-split {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em; /* mobile: vertical space between 2 boxes */
+  width: 100%;
+  position: relative;
+  /* outline: 1px solid fuchsia; */
+}
+
+@media (min-width: 1024px) {
+  /* changes for desktop sizes */
+
+  /* put boxes side by side */
+  .two-box-split {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vmin;
+    /* outline: 2px solid blue; */
+  }
+}
+
+.social-media-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+}
+
+.issue-section {
+  outline: 1px solid red;
+}
+
+.issue {
+  outline: 1px solid green;
+}
+
+@font-face {
+  font-family: PrimaryVariableFont;
+  src: url("font/Inconsolata-VariableFont_wdth,wght.ttf");
+}
+
+/*
+@font-face {
+  font-family: PrimaryItalicVariableFont;
+  src: url(font/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+*/
+
+@font-face {
+  font-family: SecondaryVariableFont;
+  src: url(font/EBGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: SecondaryItalicVariableFont;
+  src: url(font/EBGaramond-Italic-VariableFont_wght.ttf);
+}
