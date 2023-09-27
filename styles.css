@@ -111,7 +111,12 @@ h5 {
 }
 
 .issue {
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
+  background: lightblue;
+  padding: 0 10px;
+  margin: 15px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 @font-face {
