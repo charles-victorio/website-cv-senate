@@ -1,3 +1,11 @@
+/*
+blue light: #75f4ff
+blue mid: #3bd0f4
+blue dark: #00ace9
+
+maybe use a better font than inconsolata, maybe more rounded and friendlier
+*/
+
 /*@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 */
 
@@ -37,10 +45,18 @@ h3 {
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.5em;
   padding-bottom: 1px;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #00ace9;
   margin-bottom: -0.5em;
+}
+
+a {
+  color: #000000; /* find a better blue color */
+}
+
+.issue-pic {
+  border-radius: 5px;
 }
 
 @media (min-width: 1024px) {
@@ -61,7 +77,7 @@ h5 {
 
 .screen {
   align-items: center;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   border: 1px none;
   display: flex;
   flex-direction: column;
@@ -111,9 +127,11 @@ h5 {
 }
 
 .issue {
-  outline: 1px solid green;
-  background: lightblue;
+  outline: 1px solid #75f4ff;
+  /* background: #3bd0f4; */
+  background: linear-gradient(165deg, #3bd0f4, #9198e5);
   padding: 0 10px;
+  padding-bottom: 1px; /*makes no sense*/
   margin: 15px 0;
   margin-bottom: 20px;
   border-radius: 5px;
