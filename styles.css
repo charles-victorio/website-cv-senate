@@ -109,25 +109,41 @@ img {
   /* outline: 1px solid green; */
 }
 
-.two {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1em; /* mobile: vertical space between 2 boxes */
-  width: 100%;
-  position: relative;
-  /* outline: 1px solid fuchsia; */
+/* @media (min-width: 1024px) { */
+  /* changes for desktop sizes */
+@media (min-width: 760px) {
+  /* changes for ipad/tablet sizes */
+  .bio-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    margin-top: 3em;
+  }
+  .bio-section h3 {
+    /* To move "About Me" to line up with 
+       the top of the bio picture */
+    margin-top: 0;
+    /* outline: 1px solid coral; */
+  }
+  .bio-text {
+    width: 100%;
+  }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) { */
   /* changes for desktop sizes */
+@media (min-width: 760px) {
+  /* changes for ipad/tablet sizes */
 
   /* put boxes side by side */
-  .two {
-    flex-direction: row;
-    justify-content: center;
-    gap: 10vmin;
+  .row {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* position: relative; */
+    gap: 1em;
+    margin-bottom: 1em;
     /* outline: 2px solid blue; */
   }
 }
@@ -149,6 +165,7 @@ img {
   background: linear-gradient(165deg, #3bd0f4, #9198e5);
   padding: 0 10px 1px 10px;
   border-radius: 5px;
+  width: 100%;  /* This is a flex item */
 }
 
 .issue-pic {
@@ -156,7 +173,8 @@ img {
 
 @font-face {
   font-family: PrimaryVariableFont;
-  src: url("font/Inconsolata-VariableFont_wdth,wght.ttf");
+  src: url("font/Pacifico-Regular.ttf");
+  /* src: url("font/Inconsolata-VariableFont_wdth,wght.ttf"); */
 }
 
 @font-face {
